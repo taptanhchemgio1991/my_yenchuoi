@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chuối Sạch Yến Chibi Hải Phòng - Cung Cấp Sỉ & Lẻ Chuối Chín Tươi Ngon</title>
+    <meta name="description" content="Chuyên cung cấp chuối chín sạch, chất lượng cao cho KCN VSIP, An Dương, LG Nomura, Tràng Duệ, Bếp ăn, Trường học và Chợ Ngọ Dương Hải Phòng. Giao hàng miễn phí!">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        banana: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            400: '#facc15',
+                            500: '#eab308',
+                            600: '#ca8a04',
+                            700: '#a16207',
+                        },
+                        leaf: {
+                            50: '#f0fdf4',
+                            100: '#dcfce7',
+                            500: '#22c55e',
+                            600: '#16a34a',
+                            700: '#15803d',
+                            800: '#166534',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- FontAwesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <style>
+        .glow-yellow {
+            box-shadow: 0 0 25px rgba(234, 179, 8, 0.4);
+        }
+        .bg-pattern {
+            background-color: #fafaf9;
+            background-image: radial-gradient(#e2e8f0 1px, transparent 1px);
+            background-size: 24px 24px;
+        }
+        .animate-bounce-slow {
+            animation: bounce 2s infinite;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gray-50 bg-pattern antialiased selection:bg-banana-400 selection:text-leaf-800">
+
+    <!-- TOP BAR -->
+    <div class="bg-leaf-700 text-white text-xs md:text-sm py-2 px-4 text-center font-medium flex justify-between items-center max-w-full">
+        <div class="container mx-auto flex justify-between items-center">
+            <span class="flex items-center gap-2">
+                <i class="fa-solid fa-truck-fast text-banana-400"></i>
+                <span class="hidden md:inline">Ưu đãi đặc biệt:</span> Giao hàng <strong>MIỄN PHÍ</strong> khu vực Hải Phòng!
+            </span>
+            <div class="flex items-center gap-4">
+                <a href="tel:0768371726" class="hover:text-banana-300 transition flex items-center gap-1 font-bold">
+                    <i class="fa-solid fa-phone"></i> 0768371726
+                </a>
+                <span class="hidden sm:inline text-gray-300">|</span>
+                <span class="hidden sm:inline"><i class="fa-solid fa-location-dot text-banana-400"></i> Chợ Ngọ Dương, Hải Phòng</span>
+            </div>
+        </div>
+    </div>
+
+    <!-- NAVIGATION -->
+    <nav class="sticky top-0 z-40 bg-white/95 backdrop-blur-md shadow-sm border-b border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-12 h-12 bg-banana-400 rounded-2xl flex items-center justify-center text-leaf-800 text-2xl font-black shadow-md group-hover:scale-105 transition transform">
+                        <i class="fa-solid fa-cloud-sun text-leaf-700"></i>
+                    </div>
+                    <div>
+                        <span class="text-2xl font-extrabold text-leaf-800 tracking-tight block leading-none">YẾN CHIBI</span>
+                        <span class="text-xs font-semibold text-banana-600 tracking-wider uppercase">Chuối Sạch Hải Phòng</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Menu -->
+                <div class="hidden lg:flex items-center gap-8 font-medium text-gray-700">
+                    <a href="#about" class="hover:text-leaf-600 transition">Giới Thiệu</a>
+                    <a href="#services" class="hover:text-leaf-600 transition">Khách Hàng Mục Tiêu</a>
+                    <a href="#advantages" class="hover:text-leaf-600 transition">Ưu Điểm</a>
+                    <a href="#products" class="hover:text-leaf-600 transition">Sản Phẩm</a>
+                    <a href="#order" class="hover:text-leaf-600 transition">Báo Giá Sỉ</a>
+                </div>
+
+                <!-- Action Button -->
+                <div class="hidden sm:flex items-center gap-3">
+                    <a href="https://zalo.me/0768371726" target="_blank" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-4 py-2.5 rounded-xl shadow-sm transition flex items-center gap-2">
+                        <i class="fa-solid fa-comment"></i> Zalo Ngay
+                    </a>
+                    <a href="tel:0768371726" class="bg-banana-400 hover:bg-banana-500 text-leaf-800 font-bold px-5 py-2.5 rounded-xl shadow-md transition flex items-center gap-2 hover:shadow-lg">
+                        <i class="fa-solid fa-phone-volume"></i> 0768371726
+                    </a>
+                </div>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-btn" class="lg:hidden text-gray-700 p-2 text-2xl focus:outline-none">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-white border-b border-gray-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#about" class="block py-2 text-gray-700 font-medium hover:text-leaf-600">Giới Thiệu</a>
+            <a href="#services" class="block py-2 text-gray-700 font-medium hover:text-leaf-600">Khách Hàng Mục Tiêu</a>
+            <a href="#advantages" class="block py-2 text-gray-700 font-medium hover:text-leaf-600">Ưu Điểm</a>
+            <a href="#products" class="block py-2 text-gray-700 font-medium hover:text-leaf-600">Sản Phẩm</a>
+            <a href="#order" class="block py-2 text-gray-700 font-medium hover:text-leaf-600">Báo Giá Sỉ</a>
+            <div class="pt-4 flex flex-col gap-2">
+                <a href="tel:0768371726" class="w-full text-center bg-banana-400 text-leaf-800 font-bold py-3 rounded-xl shadow">
+                    <i class="fa-solid fa-phone"></i> Gọi ngay: 0768371726
+                </a>
+                <a href="https://zalo.me/0768371726" target="_blank" class="w-full text-center bg-blue-600 text-white font-bold py-3 rounded-xl shadow">
+                    <i class="fa-solid fa-comment"></i> Chat Zalo 0768371726
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative pt-8 pb-20 md:py-24 overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Text Content -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left">
+                    <div class="inline-flex items-center gap-2 bg-leaf-100 text-leaf-800 px-4 py-2 rounded-full font-semibold text-sm shadow-sm border border-leaf-200">
+                        <span class="w-2 h-2 rounded-full bg-leaf-600 animate-pulse"></span>
+                        Chuyên Cung Cấp Chuối Sạch Tại Hải Phòng
+                    </div>
+
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight">
+                        Chuối Chín Sạch & Thơm Ngon - <span class="text-leaf-700 underline decoration-banana-400 decoration-wavy">Tươi Mới Mỗi Ngày</span>
+                    </h1>
+
+                    <p class="text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
+                        Nguồn cung cấp uy tín cho <strong class="text-gray-900">Bếp ăn Công nghiệp KCN (VSIP, An Dương, LG Nomura, Tràng Duệ)</strong>, <strong class="text-gray-900">Trường học / Nhà trẻ</strong> và <strong class="text-gray-900">Chuối lễ thắp hương Chợ Ngọ Dương</strong>.
+                    </p>
+
+                    <!-- Key Benefits Pill List -->
+                    <div class="pt-2 flex flex-wrap justify-center lg:justify-start gap-4 text-sm font-semibold text-gray-700">
+                        <span class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-circle-check text-leaf-600"></i> Không Hóa Chất Độc Hải
+                        </span>
+                        <span class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-circle-check text-leaf-600"></i> Giao Hàng Miễn Phí
+                        </span>
+                        <span class="flex items-center gap-2 bg-white px-3.5 py-2 rounded-lg shadow-sm border border-gray-100">
+                            <i class="fa-solid fa-circle-check text-leaf-600"></i> Giá Sỉ Tận Gốc
+                        </span>
+                    </div>
+
+                    <!-- CTA Buttons -->
+                    <div class="pt-4 flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4">
+                        <a href="#order" class="w-full sm:w-auto bg-leaf-600 hover:bg-leaf-700 text-white font-bold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-paper-plane"></i> Nhận Báo Giá Sỉ KCN
+                        </a>
+                        <a href="tel:0768371726" class="w-full sm:w-auto bg-banana-400 hover:bg-banana-500 text-leaf-900 font-extrabold text-lg px-8 py-4 rounded-2xl shadow-lg hover:shadow-xl transition transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-phone-volume text-xl"></i> 0768371726 (Yến Chibi)
+                        </a>
+                    </div>
+
+                    <!-- Trust Stats -->
+                    <div class="pt-8 border-t border-gray-200 grid grid-cols-3 gap-4 text-center">
+                        <div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-leaf-700">100%</div>
+                            <div class="text-xs md:text-sm text-gray-500 font-medium">Chín Tự Nhiên</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-leaf-700">4+</div>
+                            <div class="text-xs md:text-sm text-gray-500 font-medium">KCN Lớn Phục Vụ</div>
+                        </div>
+                        <div>
+                            <div class="text-2xl md:text-3xl font-extrabold text-leaf-700">0đ</div>
+                            <div class="text-xs md:text-sm text-gray-500 font-medium">Phí Giao Hàng</div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Visual Banner Card -->
+                <div class="lg:col-span-5 relative">
+                    <div class="relative mx-auto max-w-md lg:max-w-none">
+                        <!-- Background Glow Elements -->
+                        <div class="absolute -top-6 -left-6 w-72 h-72 bg-banana-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+                        <div class="absolute -bottom-6 -right-6 w-72 h-72 bg-leaf-300 rounded-full mix-blend-multiply filter blur-2xl opacity-60"></div>
+
+                        <!-- Card Image Showcase -->
+                        <div class="relative bg-white p-4 sm:p-6 rounded-3xl shadow-2xl border border-gray-100">
+                            <div class="relative rounded-2xl overflow-hidden aspect-[4/3] bg-banana-100 mb-6 group">
+                                <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=800&q=80" 
+                                     alt="Chuối chín tươi ngon Yến Chibi" 
+                                     class="w-full h-full object-cover group-hover:scale-105 transition duration-500"
+                                     onerror="this.src='https://placehold.co/600x450/facc15/166534?text=Chuoi+Chin+Yen+Chibi'">
+                                <div class="absolute top-3 right-3 bg-red-600 text-white font-extrabold px-3 py-1 rounded-full text-xs uppercase tracking-wider shadow">
+                                    Giao Tận Nơi Free
+                                </div>
+                            </div>
+
+                            <!-- Highlights inside card -->
+                            <div class="space-y-3">
+                                <div class="flex items-center justify-between border-b pb-3 border-gray-100">
+                                    <span class="text-gray-600 font-medium">Đại lý chính:</span>
+                                    <span class="font-bold text-gray-900">Yến Chibi - Chợ Ngọ Dương</span>
+                                </div>
+                                <div class="flex items-center justify-between border-b pb-3 border-gray-100">
+                                    <span class="text-gray-600 font-medium">Khu vực phục vụ:</span>
+                                    <span class="font-bold text-leaf-700">VSIP, An Dương, LG, Tràng Duệ</span>
+                                </div>
+                                <div class="p-3 bg-banana-50 rounded-xl border border-banana-200 flex items-center gap-3">
+                                    <i class="fa-solid fa-headset text-banana-600 text-2xl"></i>
+                                    <div>
+                                        <div class="text-xs text-gray-500 font-medium">Hotline / Zalo tư vấn 24/7</div>
+                                        <div class="text-lg font-black text-gray-900">0768371726</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TARGET CUSTOMERS & SERVICES -->
+    <section id="services" class="py-16 bg-white border-y border-gray-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-leaf-600 uppercase tracking-widest mb-2">Đối Tượng Phục Vụ Năng Động</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Giải Pháp Chuối Chín Tráng Miệng & Thắp Hương Hàng Đầu</p>
+                <div class="w-20 h-1.5 bg-banana-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Card 1: KCN -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300 relative group overflow-hidden">
+                    <div class="w-16 h-16 bg-leaf-100 text-leaf-700 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-leaf-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-industry"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Bếp Ăn Khu Công Nghiệp</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Cung cấp số lượng lớn suất ăn tráng miệng cho công nhân tại các KCN: <strong class="text-leaf-800">VSIP Hải Phòng, An Dương, LG Nomura, Tràng Duệ</strong> và các cụm công nghiệp lân cận.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> Quả chín vàng đều, vỏ mỏng</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> Đóng gói theo yêu cầu suất ăn</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> Giao đúng giờ ca làm việc</li>
+                    </ul>
+                    <a href="#order" class="inline-flex items-center gap-2 text-leaf-700 font-bold hover:gap-3 transition">Đặt chuối KCN <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 2: Chợ Ngọ Dương & Lễ -->
+                <div class="bg-banana-50/60 rounded-2xl p-8 border border-banana-200 hover:shadow-xl transition duration-300 relative group">
+                    <div class="w-16 h-16 bg-banana-400 text-leaf-900 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-banana-500 transition">
+                        <i class="fa-solid fa-hands-praying"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Chuối Bán Rằm & Ngày Lễ</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Bán buôn, bán lẻ trực tiếp tại <strong class="text-leaf-800">Chợ Ngọ Dương</strong> (An Phong, Hải Phòng). Nải chuối đẹp, nải to, quả mẩy chuyên dùng thắp hương mùng 1, ngày rằm.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-banana-700"></i> Nải xòe đẹp, tươi cuống</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-banana-700"></i> Đủ kích thước từ lớn tới vừa</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-banana-700"></i> Giá hợp lý tại sạp chợ</li>
+                    </ul>
+                    <a href="tel:0768371726" class="inline-flex items-center gap-2 text-banana-700 font-bold hover:gap-3 transition">Đặt chuối thắp hương <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+
+                <!-- Card 3: Trường học & Nhà trẻ -->
+                <div class="bg-gray-50 rounded-2xl p-8 border border-gray-100 hover:shadow-xl transition duration-300 relative group overflow-hidden">
+                    <div class="w-16 h-16 bg-leaf-100 text-leaf-700 rounded-2xl flex items-center justify-center text-3xl mb-6 group-hover:bg-leaf-600 group-hover:text-white transition">
+                        <i class="fa-solid fa-school"></i>
+                    </div>
+                    <h3 class="text-2xl font-bold text-gray-900 mb-3">Trường Học & Nhà Trẻ</h3>
+                    <p class="text-gray-600 mb-6 leading-relaxed">
+                        Suất tráng miệng dinh dưỡng, an toàn tuyệt đối cho trẻ mầm non, học sinh tiểu học và bếp ăn tập thể tại Hải Phòng.
+                    </p>
+                    <ul class="space-y-2 text-sm text-gray-700 font-medium mb-6">
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> 100% Không hóa chất bảo quản</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> Ngọt tự nhiên, dễ tiêu hóa</li>
+                        <li class="flex items-center gap-2"><i class="fa-solid fa-check text-leaf-600"></i> Đảm bảo tiêu chuẩn ATSTP</li>
+                    </ul>
+                    <a href="#order" class="inline-flex items-center gap-2 text-leaf-700 font-bold hover:gap-3 transition">Liên hệ hợp tác <i class="fa-solid fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ADVANTAGES / COMMITMENTS -->
+    <section id="advantages" class="py-16 bg-leaf-800 text-white relative overflow-hidden">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-banana-400 uppercase tracking-widest mb-2">Lý Do Nên Chọn Yến Chibi</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold">Cam Kết Chất Lượng & Dịch Vụ</p>
+                <div class="w-20 h-1.5 bg-banana-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Advantage 1 -->
+                <div class="bg-leaf-700/60 p-6 rounded-2xl border border-leaf-600 text-center hover:bg-leaf-700 transition">
+                    <div class="w-16 h-16 bg-banana-400 text-leaf-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-truck-ramp-box"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Giao Hàng Miễn Phí</h4>
+                    <p class="text-leaf-100 text-sm leading-relaxed">
+                        Miễn phí vận chuyển tận nơi tới các KCN, trường học và địa điểm trong khu vực Hải Phòng.
+                    </p>
+                </div>
+
+                <!-- Advantage 2 -->
+                <div class="bg-leaf-700/60 p-6 rounded-2xl border border-leaf-600 text-center hover:bg-leaf-700 transition">
+                    <div class="w-16 h-16 bg-banana-400 text-leaf-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-leaf"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Chín Tự Nhiên 100%</h4>
+                    <p class="text-leaf-100 text-sm leading-relaxed">
+                        Nói KHÔNG với thuốc dấm hóa chất độc hại, đảm bảo an toàn tuyệt đối cho người tiêu dùng.
+                    </p>
+                </div>
+
+                <!-- Advantage 3 -->
+                <div class="bg-leaf-700/60 p-6 rounded-2xl border border-leaf-600 text-center hover:bg-leaf-700 transition">
+                    <div class="w-16 h-16 bg-banana-400 text-leaf-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-award"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Quả Đều & Mẫu Mã Đẹp</h4>
+                    <p class="text-leaf-100 text-sm leading-relaxed">
+                        Tuyển chọn từng quả, chín vàng tươi, vị thơm ngọt chuẩn chuối quê Hải Phòng.
+                    </p>
+                </div>
+
+                <!-- Advantage 4 -->
+                <div class="bg-leaf-700/60 p-6 rounded-2xl border border-leaf-600 text-center hover:bg-leaf-700 transition">
+                    <div class="w-16 h-16 bg-banana-400 text-leaf-900 rounded-full flex items-center justify-center text-2xl font-bold mx-auto mb-4 shadow">
+                        <i class="fa-solid fa-tags"></i>
+                    </div>
+                    <h4 class="text-xl font-bold mb-2">Giá Tận Gốc</h4>
+                    <p class="text-leaf-100 text-sm leading-relaxed">
+                        Cung cấp giá sỉ ưu đãi nhất cho các đối tác hợp tác lâu dài và đơn hàng số lượng lớn.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PRODUCTS CATALOG -->
+    <section id="products" class="py-16 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <h2 class="text-xs font-bold text-leaf-600 uppercase tracking-widest mb-2">Danh Mục Sản Phẩm</h2>
+                <p class="text-3xl sm:text-4xl font-extrabold text-gray-900">Các Loại Chuối Cung Cấp Chủ Đạo</p>
+                <div class="w-20 h-1.5 bg-banana-400 mx-auto mt-4 rounded-full"></div>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Product 1 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-xl transition flex flex-col">
+                    <div class="h-52 bg-banana-100 relative">
+                        <img src="https://images.unsplash.com/photo-1543218024-57a70143c369?auto=format&fit=crop&w=600&q=80" 
+                             alt="Chuối Tiêu Hồng" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/fef3c7/a16207?text=Chuoi+Tieu+Hong'">
+                        <span class="absolute top-3 left-3 bg-leaf-600 text-white font-bold text-xs px-3 py-1 rounded-full">Bán Chạy Nhất</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Chuối Tiêu Hồng Căng Mẩy</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Vỏ mỏng, ruột vàng, hương vị ngọt đậm đặc trưng. Rất thích hợp làm suất ăn tráng miệng cho KCN và nhà trẻ.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 block">Giá sỉ KCN</span>
+                                <span class="text-lg font-bold text-leaf-700">Liên hệ báo giá</span>
+                            </div>
+                            <a href="#order" class="bg-banana-400 hover:bg-banana-500 text-leaf-900 font-bold px-4 py-2 rounded-xl text-sm transition">
+                                Đặt Hàng
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 2 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-xl transition flex flex-col">
+                    <div class="h-52 bg-banana-100 relative">
+                        <img src="https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=600&q=80" 
+                             alt="Chuối Tây Chuối Sứ" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/fef3c7/a16207?text=Chuoi+Tay+Sieu+Dep'">
+                        <span class="absolute top-3 left-3 bg-banana-500 text-leaf-900 font-bold text-xs px-3 py-1 rounded-full">Chợ Lễ & Rằm</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Chuối Tây / Chuối Sứ Thắp Hương</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Quả to tròn, xanh tươi cuống hoặc chín vàng óng đẹp mắt. Chuyên phục vụ bà con đi chợ lễ Ngọ Dương và thắp hương.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 block">Bán lẻ & Sỉ</span>
+                                <span class="text-lg font-bold text-leaf-700">Giá chợ ưu đãi</span>
+                            </div>
+                            <a href="tel:0768371726" class="bg-banana-400 hover:bg-banana-500 text-leaf-900 font-bold px-4 py-2 rounded-xl text-sm transition">
+                                Gọi Mua
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Product 3 -->
+                <div class="bg-white rounded-2xl overflow-hidden shadow-sm border border-gray-200 hover:shadow-xl transition flex flex-col">
+                    <div class="h-52 bg-banana-100 relative">
+                        <img src="https://images.unsplash.com/photo-1528825871115-3581a5387919?auto=format&fit=crop&w=600&q=80" 
+                             alt="Chuối Suất Ăn Công Nghiệp" 
+                             class="w-full h-full object-cover"
+                             onerror="this.src='https://placehold.co/600x400/fef3c7/a16207?text=Chuoi+Suat+An+KCN'">
+                        <span class="absolute top-3 left-3 bg-blue-600 text-white font-bold text-xs px-3 py-1 rounded-full">Sỉ Số Lượng Lớn</span>
+                    </div>
+                    <div class="p-6 flex-1 flex flex-col justify-between">
+                        <div>
+                            <h3 class="text-xl font-bold text-gray-900 mb-2">Chuối Tráng Miệng Suất Ăn</h3>
+                            <p class="text-gray-600 text-sm mb-4">
+                                Phân loại theo khối lượng chuẩn từng quả, dễ chia suất cho nhà bếp KCN VSIP, An Dương, LG Nomura, Tràng Duệ.
+                            </p>
+                        </div>
+                        <div class="pt-4 border-t border-gray-100 flex items-center justify-between">
+                            <div>
+                                <span class="text-xs text-gray-500 block">Hợp đồng dài hạn</span>
+                                <span class="text-lg font-bold text-leaf-700">Chiết khấu cao</span>
+                            </div>
+                            <a href="#order" class="bg-banana-400 hover:bg-banana-500 text-leaf-900 font-bold px-4 py-2 rounded-xl text-sm transition">
+                                Báo Giá Sỉ
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ORDER & QUOTE FORM SECTION -->
+    <section id="order" class="py-16 bg-white relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-gradient-to-br from-banana-50 via-white to-leaf-50 rounded-3xl p-6 sm:p-12 border border-banana-200 shadow-xl">
+                <div class="grid lg:grid-cols-12 gap-12">
+                    
+                    <!-- Form Left Info -->
+                    <div class="lg:col-span-5 space-y-6">
+                        <span class="bg-banana-400 text-leaf-900 text-xs font-bold px-3 py-1.5 rounded-full uppercase tracking-wider">
+                            Đơn Hàng & Báo Giá
+                        </span>
+                        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900">
+                            Gửi Yêu Cầu Báo Giá Chuối Sỉ Tận Gốc
+                        </h2>
+                        <p class="text-gray-600 leading-relaxed">
+                            Quý khách là quản lý bếp ăn KCN (VSIP, An Dương, LG, Tràng Duệ), đại diện nhà trẻ hoặc tiểu thương chợ? Vui lòng điền thông tin để Yến Chibi liên hệ gửi báo giá ưu đãi nhất!
+                        </p>
+
+                        <div class="space-y-4 pt-4">
+                            <div class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
+                                <div class="w-12 h-12 bg-leaf-100 text-leaf-700 rounded-xl flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium">Hotline / Zalo Trực Tiếp</div>
+                                    <a href="tel:0768371726" class="text-xl font-black text-gray-900 hover:text-leaf-600 transition">0768371726</a>
+                                </div>
+                            </div>
+
+                            <div class="flex items-center gap-4 p-4 bg-white rounded-2xl shadow-sm border border-gray-100">
+                                <div class="w-12 h-12 bg-banana-100 text-banana-700 rounded-xl flex items-center justify-center text-xl font-bold">
+                                    <i class="fa-solid fa-store"></i>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-gray-500 font-medium">Địa Điểm Bán Trực Tiếp</div>
+                                    <div class="text-base font-bold text-gray-900">Chợ Ngọ Dương, P. An Phong, Hải Phòng</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Interactive Form Right -->
+                    <div class="lg:col-span-7 bg-white p-6 sm:p-8 rounded-2xl shadow-md border border-gray-100">
+                        <form id="quote-form" onsubmit="handleFormSubmit(event)" class="space-y-5">
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Họ và Tên / Tên Khách Hàng *</label>
+                                <input type="text" id="customer-name" required placeholder="Ví dụ: Anh Nam - Bếp KCN VSIP" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition">
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Số Điện Thoại / Zalo *</label>
+                                    <input type="tel" id="customer-phone" required placeholder="0768371726" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Đối Tượng Phục Vụ *</label>
+                                    <select id="customer-type" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition bg-white">
+                                        <option value="Bếp ăn KCN VSIP">Bếp ăn KCN VSIP</option>
+                                        <option value="Bếp ăn KCN An Dương">Bếp ăn KCN An Dương</option>
+                                        <option value="Bếp ăn KCN LG Nomura">Bếp ăn KCN LG Nomura</option>
+                                        <option value="Bếp ăn KCN Tràng Duệ">Bếp ăn KCN Tràng Duệ</option>
+                                        <option value="Trường học / Nhà trẻ">Trường học / Nhà trẻ</option>
+                                        <option value="Mua lẻ / Thắp hương Chợ Ngọ Dương">Thắp hương / Chợ Ngọ Dương</option>
+                                        <option value="Khác">Khu vực khác tại Hải Phòng</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="grid sm:grid-cols-2 gap-4">
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Số lượng dự kiến (Kg/Nải)</label>
+                                    <input type="text" id="quantity" placeholder="Ví dụ: 50 kg/ngày" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition">
+                                </div>
+                                <div>
+                                    <label class="block text-sm font-bold text-gray-700 mb-2">Tần suất giao hàng</label>
+                                    <select id="frequency" class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition bg-white">
+                                        <option value="Giao hàng hàng ngày">Giao hàng hàng ngày</option>
+                                        <option value="2-3 lần / tuần">2-3 lần / tuần</option>
+                                        <option value="Theo ngày Rằm / Mùng 1">Theo ngày Rằm / Mùng 1</option>
+                                        <option value="Đặt một lần">Đặt một lần</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div>
+                                <label class="block text-sm font-bold text-gray-700 mb-2">Ghi chú thêm</label>
+                                <textarea id="note" rows="3" placeholder="Yêu cầu về độ chín, thời gian giao hàng..." class="w-full px-4 py-3 rounded-xl border border-gray-300 focus:ring-2 focus:ring-leaf-500 focus:border-leaf-500 outline-none transition"></textarea>
+                            </div>
+
+                            <button type="submit" class="w-full bg-leaf-600 hover:bg-leaf-700 text-white font-bold text-lg py-4 rounded-xl shadow-lg transition transform hover:-translate-y-0.5 flex items-center justify-center gap-2">
+                                <i class="fa-solid fa-paper-plane"></i> Gửi Yêu Cầu Cho Yến Chibi
+                            </button>
+                        </form>
+
+                        <!-- Notification Modal / Box inside form -->
+                        <div id="form-success-msg" class="hidden mt-4 p-4 bg-leaf-100 border border-leaf-300 text-leaf-800 rounded-xl text-center font-medium">
+                            <i class="fa-solid fa-circle-check text-xl mb-1 text-leaf-600 block"></i>
+                            Cảm ơn quý khách! Yến Chibi đã nhận được thông tin và sẽ gọi lại/nhắn Zalo ngay lập tức!
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-gray-900 text-gray-300 py-12 border-t border-gray-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid md:grid-cols-3 gap-8 mb-8">
+                
+                <!-- Col 1 -->
+                <div>
+                    <div class="flex items-center gap-3 mb-4">
+                        <div class="w-10 h-10 bg-banana-400 rounded-xl flex items-center justify-center text-leaf-800 font-bold text-xl">
+                            <i class="fa-solid fa-cloud-sun"></i>
+                        </div>
+                        <span class="text-xl font-black text-white">YẾN CHIBI HẢI PHÒNG</span>
+                    </div>
+                    <p class="text-sm text-gray-400 leading-relaxed mb-4">
+                        Chuyên cung cấp sỉ & lẻ chuối chín sạch, chất lượng cao cho các bếp ăn công nghiệp KCN VSIP, An Dương, LG Nomura, Tràng Duệ, trường học và chợ truyền thống Ngọ Dương.
+                    </p>
+                </div>
+
+                <!-- Col 2 -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Thông Tin Liên Hệ</h4>
+                    <ul class="space-y-3 text-sm">
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-user text-banana-400 mt-1"></i>
+                            <span>Chủ cơ sở: <strong>Yến Chibi</strong></span>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-phone text-banana-400 mt-1"></i>
+                            <a href="tel:0768371726" class="hover:text-white transition font-bold">0768371726 (Call / Zalo)</a>
+                        </li>
+                        <li class="flex items-start gap-3">
+                            <i class="fa-solid fa-location-dot text-banana-400 mt-1"></i>
+                            <span>Chợ Ngọ Dương, phường An Phong, Hải Phòng</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Col 3 -->
+                <div>
+                    <h4 class="text-white font-bold text-lg mb-4">Khu Vực Phục Vụ Nhanh</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">KCN VSIP Hải Phòng</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">KCN An Dương</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">KCN LG Nomura</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">KCN Tràng Duệ</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">Chợ Ngọ Dương</span>
+                        <span class="bg-gray-800 text-gray-300 text-xs px-3 py-1.5 rounded-lg">Các Trường Học HP</span>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="border-t border-gray-800 pt-6 text-center text-xs text-gray-500">
+                <p>&copy; 2026 Chuối Sạch Yến Chibi Hải Phòng. Tất cả quyền được bảo lưu. Giao hàng miễn phí tận nơi.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- FLOATING ACTION BUTTONS (MOBILE & DESKTOP) -->
+    <div class="fixed bottom-6 right-6 z-50 flex flex-col gap-3">
+        <!-- Zalo Button -->
+        <a href="https://zalo.me/0768371726" target="_blank" title="Nhắn Zalo" class="w-14 h-14 bg-blue-600 hover:bg-blue-700 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition duration-300 border-2 border-white">
+            <i class="fa-solid fa-comment"></i>
+        </a>
+
+        <!-- Call Phone Button -->
+        <a href="tel:0768371726" title="Gọi Ngay 0768371726" class="w-14 h-14 bg-leaf-600 hover:bg-leaf-700 text-white rounded-full flex items-center justify-center text-2xl shadow-2xl hover:scale-110 transition duration-300 border-2 border-white animate-bounce-slow">
+            <i class="fa-solid fa-phone-volume"></i>
+        </a>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC -->
+    <script>
+        // Mobile Menu Toggle
+        const menuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        menuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        // Close mobile menu when clicking links
+        document.querySelectorAll('#mobile-menu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Handle Form Submission with Zalo Direct Redirect fallback
+        function handleFormSubmit(event) {
+            event.preventDefault();
+            
+            const name = document.getElementById('customer-name').value;
+            const phone = document.getElementById('customer-phone').value;
+            const type = document.getElementById('customer-type').value;
+            const quantity = document.getElementById('quantity').value || 'Chưa xác định';
+            const note = document.getElementById('note').value || 'Không có';
+
+            // Show success message
+            const successMsg = document.getElementById('form-success-msg');
+            successMsg.classList.remove('hidden');
+
+            // Format Zalo message text
+            const zaloText = encodeURIComponent(
+                `Xin chào Yến Chibi, tôi cần báo giá chuối:\n` +
+                `- Họ tên: ${name}\n` +
+                `- SĐT: ${phone}\n` +
+                `- Đối tượng: ${type}\n` +
+                `- Số lượng dự kiến: ${quantity}\n` +
+                `- Ghi chú: ${note}`
+            );
+
+            // Redirect to Zalo after short delay
+            setTimeout(() => {
+                window.open(`https://zalo.me/0768371726?text=${zaloText}`, '_blank');
+            }, 1000);
+        }
+    </script>
+</body>
+</html>
